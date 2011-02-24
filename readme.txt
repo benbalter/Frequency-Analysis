@@ -1,0 +1,1 @@
+To use, simply add source text to "input.txt" and place in the same folder.
