@@ -29,7 +29,7 @@ $content = preg_replace( "/\n/", " ", $content );
 $content = preg_replace( "/\s\s+/", " ", $content );
 
 //split content on words
-$content = split(" ",$content);
+$content = explode(" ",$content);
 $words = Array();
 
 /**
@@ -60,7 +60,7 @@ function build_stats($input,$num) {
 	}
 	if ($num == 1) {
 		//clean boring words
-		$a = split(" ","the of and to a in that it is was i for on you he be with as by at have are this not but had his they from she which or we an there her were one do been all their has would will what if can when so my");
+		$a = explode(" ","the of and to a in that it is was i for on you he be with as by at have are this not but had his they from she which or we an there her were one do been all their has would will what if can when so my");
 		foreach ($a as $banned) unset($results[$banned]);
 	}
 	
